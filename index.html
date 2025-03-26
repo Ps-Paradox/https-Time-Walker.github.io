@@ -21,9 +21,8 @@
     <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
     <!-- Google Sign-In -->
     <script src="https://accounts.google.com/gsi/client" async defer></script>
-    <!-- Preload critical assets -->
-    <link rel="preload" href="css/styles.css" as="style">
-    <link rel="stylesheet" href="css/styles.css">
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Loading Screen -->
@@ -59,18 +58,18 @@
             </div>
         </div>
     </aside>
-<!-- VR Scene -->
-<div id="vr-scene" style="display: none;">
-    <a-scene>
-        <a-sky src="scenes/cyberpunk-city-360.jpg" rotation="0 -90 0"></a-sky>
-        <a-text value="AI News: Neural Breakthrough" color="#ff00a0" position="-2 2 -3" scale="1.5 1.5 1.5"></a-text>
-        <a-text value="Gaming: Cyberpunk Update" color="#00eaff" position="2 2 -3" scale="1.5 1.5 1.5"></a-text>
-        <a-entity position="0 1.6 0">
-            <a-camera></a-camera>
-        </a-entity>
-    </a-scene>
-</div>
-
+    <!-- VR Scene -->
+    <div id="vr-scene" style="display: none;">
+        <a-scene>
+            <!-- Commented out due to missing file; uncomment after uploading scenes/cyberpunk-city-360.jpg -->
+            <!-- <a-sky src="scenes/cyberpunk-city-360.jpg" rotation="0 -90 0"></a-sky> -->
+            <a-text value="AI News: Neural Breakthrough" color="#ff00a0" position="-2 2 -3" scale="1.5 1.5 1.5"></a-text>
+            <a-text value="Gaming: Cyberpunk Update" color="#00eaff" position="2 2 -3" scale="1.5 1.5 1.5"></a-text>
+            <a-entity position="0 1.6 0">
+                <a-camera></a-camera>
+            </a-entity>
+        </a-scene>
+    </div>
 <!-- Main Content -->
 <div class="main-content">
     <!-- Header -->
@@ -155,6 +154,8 @@
                         <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
                         <div class="overlay"><span>This is Next Level</span></div>
                     </div>
+                    <!-- Commented out due to missing files; uncomment after uploading media/video4.jpg, video5.jpg, video6.jpg -->
+                    <!--
                     <div class="video-card">
                         <img src="media/video4.jpg" alt="Video 4" loading="lazy">
                         <div class="overlay"><span>2023 vs Now</span></div>
@@ -167,6 +168,7 @@
                         <img src="media/video6.jpg" alt="Video 6" loading="lazy">
                         <div class="overlay"><span>It's Over</span></div>
                     </div>
+                    -->
                 </div>
                 <form id="email-signup-form">
                     <input type="email" id="email-input" placeholder="Enter your email" required />
@@ -271,7 +273,7 @@
      style="display: none;">
 </div>
 
-<script src="js/script.js" defer></script>
+<script src="script.js" defer></script>
 
 </body>
 </html>
