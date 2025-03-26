@@ -130,7 +130,7 @@ const mockPosts = [
 ];
 // Gemini API Integration (Placeholder)
 async function fetchBlogPostsFromGemini() {
-    const apiKey = "AAIzaSyCepyB4KCJDjayVKirBrehrViNfHL3rt0w"; // Replace with your Gemini API key
+    const apiKey = "YOUR_GEMINI_API_KEY"; // Replace with your Gemini API key
     const endpoint = "https://api.gemini.com/v1/generate"; // Replace with actual Gemini API endpoint
 
 try {
@@ -281,7 +281,7 @@ const aiToolsGrid = document.getElementById('ai-tools-grid');
 aiTools.forEach(tool => {
     const card = document.createElement('div');
     card.className = 'ai-tool-card';
-    card.innerHTML =         <><img src="${tool.image_url}" alt="${tool.name}" /><div class="content">             <h3>${tool.name}</h3>             <div class="category">${tool.category}</div>             <p>${tool.description}</p>         </div><a href="${tool.link}" target="_blank"></a></>    ;
+    card.innerHTML =         <img src="${tool.image_url}" alt="${tool.name}" />         <div class="content">             <h3>${tool.name}</h3>             <div class="category">${tool.category}</div>             <p>${tool.description}</p>         </div>         <a href="${tool.link}" target="_blank"></a>    ;
     aiToolsGrid.appendChild(card);
 });
 // GSAP animations
