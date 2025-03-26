@@ -130,7 +130,7 @@ const mockPosts = [
 ];
 // Gemini API Integration (Placeholder)
 async function fetchBlogPostsFromGemini() {
-    const apiKey = "YOUR_GEMINI_API_KEY"; // Replace with your Gemini API key
+    const apiKey = "AAIzaSyCepyB4KCJDjayVKirBrehrViNfHL3rt0w"; // Replace with your Gemini API key
     const endpoint = "https://api.gemini.com/v1/generate"; // Replace with actual Gemini API endpoint
 
 try {
